@@ -10,7 +10,7 @@ import { Stats } from './components/Stats'
 library.add(faCircle, faTimes)
 
 const reducer = combineReducers({
-  game: game.reduer
+  game: game.reducer
 })
 
 const store = configureStore({ reducer })
