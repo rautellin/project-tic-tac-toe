@@ -9,6 +9,9 @@ background-color: pink;
 border: 2px solid gray;
 height: 50px;
 cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
 `
 
 export const Square = ({ value, index }) => {
@@ -24,7 +27,7 @@ export const Square = ({ value, index }) => {
       className={value === null ? 'square clickable' : 'square'}
       type="button"
       onClick={handleClick}>
-      <Player value={value} />
+      <Player value={value} style={{ fontSize: '30px', color: 'white' }} />
     </SquareButton>
   )
 }
