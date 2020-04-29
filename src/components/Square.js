@@ -1,4 +1,6 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { game } from 'reducers/game'
 import { Player } from 'components/Player'
 import styled from 'styled-components'
 
@@ -10,8 +12,11 @@ cursor: pointer;
 `
 
 export const Square = ({ value, index }) => {
+  // useDispatch doesnt require any arguments and allows to triggers actions
+  const dispatch = useDispatch()
+
   const handleClick = () => {
-    // TODO
+    dispatch(game.actions.captureSquare({ index }))
   }
 
   return (

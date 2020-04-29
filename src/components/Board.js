@@ -10,6 +10,8 @@ grid-gap: 5px;
 `
 
 export const Board = () => {
+  // useSelector Hook to fetch from the store/state from any component 
+
   const squares = useSelector((store) => store.game.squares)
 
   return (
