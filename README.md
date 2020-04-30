@@ -1,6 +1,6 @@
 # Tic toc toe game using React.js and Redux
 
-
+Tic toc toe game built with React.js and Redux toolkit
 
 ## View it live
 
@@ -8,10 +8,5 @@
 
 ## What I got to learn 🧠
 
-* 
-
-## Requirements reached 🧪
-
-* 
-
-## Strech goals reached 🧘
+* How to use Redux
+* How to use Redux toolkit
